@@ -18,6 +18,8 @@ jobs:
         run: npm test
         env:
             MONGO_URI: ${{ secrets.MONGO_URI }}
+            TEST_EMAIL: 'aayush@gmail.com'
+            TEST_PASSWORD: '123'
 #   deploy:
 #     name: Wait for Deploy
 #     runs-on: ubuntu-latest
