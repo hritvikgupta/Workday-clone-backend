@@ -12,16 +12,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      - name: Change to backend directory
-        run: cd Backend
+    #   - name: Change to backend directory
+    #     run: cd Backend
       - name: Install dependencies
         run: npm install
-        working-directory: Backend
+        # working-directory: Backend
       - name: Run tests
         run: npm test
         env:
           MONGO_URI: ${{ secrets.MONGO_URI }}
-        working-directory: Backend
+        # working-directory: Backend
 
 #   deploy:
 #     name: Wait for Deploy
