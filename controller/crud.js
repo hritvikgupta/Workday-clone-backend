@@ -38,8 +38,8 @@ const loginUser = async (req, res) => {
         const token = setUser(user);
         res.cookie('uid', token, {
             httpOnly: true,
-            secure: false, 
-            sameSite: 'Lax'
+            secure: true, // Make it  true and None to None if not working in production env
+            sameSite: 'None' // Make it  false and Lax to None if not working in local env
         });
         return res.status(200).json({ message: "Login Successful" });
     } catch (error) {

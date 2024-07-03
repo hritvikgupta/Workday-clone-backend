@@ -7,14 +7,17 @@ require('dotenv').config();
 
 //setting up the port 
 const config = {
-    origin: 'http://localhost:3000', // Ensure this is correct
+    // origin: 'https://hritvikgupta.github.io', // Only the domain
+    origin: ['https://hritvikgupta.github.io', 'http://localhost:3000'],    // origin: 'http://localhost:3000', // Only the domain
+
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
-    credentials:true
+    credentials: true
 };
 // const staticRoute = require('./routes/staticRoute')
 
 //setting up the middleware
+app.set('trust proxy', 1)
 app.use(cors(config))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
