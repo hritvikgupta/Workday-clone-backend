@@ -21,6 +21,9 @@ This repository contains the backend code for the Workday Clone application. The
 
 ## File Structure
 
+* Front-end repo
+  https://github.com/hritvikgupta/workday-clone-frontend
+
 ```bash
 Frontend
 ├── components
