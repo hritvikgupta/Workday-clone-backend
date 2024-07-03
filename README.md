@@ -1,6 +1,6 @@
 # Workday React App
 
-This project was bootstrapped with [Link to application demo](https://hritvikgupta.github.io/workday-clone-frontend).
+This project was bootstrapped with [Link to application demo](https://hritvikgupta.github.io/workday-clone-frontend/)
 
 ## About the project
 
@@ -18,11 +18,11 @@ This repository contains the backend code for the Workday Clone application. The
 - [Available Scripts](#available-scripts)
 - [APIs](#apis)
 - [Tests](#tests)
+- [CI/CD](#CI/CD)
 
 ## File Structure
 
-* Front-end repo
-  https://github.com/hritvikgupta/workday-clone-frontend
+* Front-end Repo : https://github.com/hritvikgupta/workday-clone-frontend
 
 ```bash
 Frontend
@@ -46,9 +46,9 @@ Frontend
 ├── package.json # Project dependencies and scripts
 └── README.md # Project documentation
 ```
-
+  
 ```bash
-Backend
+Backend 
 ├── .github
 │ └── workflows
 │ └── main.yml # GitHub Actions CI/CD pipeline configuration
@@ -82,14 +82,14 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 
-## Getting Started
+# Getting-started
 
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-- Node.js (>= 14.x)
-- MongoDB
+* Node.js (>= 14.x)
+* MongoDB
 
 ### Installation
 
@@ -117,42 +117,42 @@ To get a local copy up and running follow these simple steps.
 
      The server will start running on http://localhost:5001.
 
-5. Environment Variables
-   a. MONGO_URI: URI for connecting to MongoDB.
-   b. JWT_SECRET: Secret key for JWT authentication.
+# Environment-Variables
+   * MONGO_URI: URI for connecting to MongoDB.
+   * JWT_SECRET: Secret key for JWT authentication.
 
-6. Available Scripts
-  a. npm start: Starts the server.
-  b. bnpm test: Runs the test suite.
-  c. npm run dev: Starts the server with nodemon for development.
+# Available-scripts
+  * npm start: Starts the server.
+  * bnpm test: Runs the test suite.
+  * npm run dev: Starts the server with nodemon for development.
 
-7. APIs
-   a. Authentication
+# Apis
+   * Authentication
       POST /api/signup: Register a new user.
       POST /api/login: Login a user.
-   b. Personal Info
+   * Personal Info
       GET /resume-uploaded: Fetch personal info.
       POST /resume-uploaded: Submit personal info.
    
-   c. Applications
+   * Applications
       GET /resume-uploaded/applications: Fetch all applications for the logged-in user.
       POST /resume-uploaded/applications: Submit a new application.
    
-8. Tests
-The project uses Jest for testing. To run tests, use:
+# Tests
+* The project uses Jest for testing. To run tests, use:
 ```bash
 npm test
 ```
 
-9. CI/CD 
-   The project uses GitHub Actions for continuous integration and deployment. The configuration is located in .github/workflows/main.yml.
+# CI/CD 
+   * The project uses GitHub Actions for continuous integration and deployment. The configuration is located in .github/workflows/main.yml.
 
-10. Learn More
-   To learn more about Express.js, visit the Express documentation.
+# Learn More
+   * To learn more about Express.js, visit the [Express documentation]([https://expressjs.com/]).
    
-   To learn more about MongoDB, visit the MongoDB documentation.
+   * To learn more about MongoDB, visit the [MongoDB documentation](https://docs.mongodb.com/).
    
-   To learn more about JWT, visit the JWT documentation.
+   * To learn more about JWT, visit the [JWT documentation]().
 
 
 
