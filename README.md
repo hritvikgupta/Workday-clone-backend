@@ -1,6 +1,6 @@
 # Workday React App
 
-This project was bootstrapped with [Link to application demp](https://hritvikgupta.github.io/workday-clone-frontend).
+This project was bootstrapped with [Link to application demo](https://hritvikgupta.github.io/workday-clone-frontend).
 
 ## About the project
 
